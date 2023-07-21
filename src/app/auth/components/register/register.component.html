@@ -1,0 +1,36 @@
+
+<div class="container card1 text-center">
+    <!-- <form name="inform" method="post" (ngSubmit)="submit()"></form>-->
+    <div class="text-center">
+      <h1>Sign Up</h1>
+      <form (ngSubmit)="submit()">
+        <div class="form-group">
+          <input name="first" type="text" placeholder="User Name" autocomplete="username" [formControl]="form.controls.username">
+        </div>
+        <div class="form-group">
+          <input name="first" type="text" placeholder="First Name" [formControl]="form.controls.firstName">
+        </div>
+        <div class="form-group">
+          <input name="last" type="text"  placeholder="Last Name" [formControl]="form.controls.lastName">
+        </div>
+        <div class="form-group">
+          <input name="email" type="text" placeholder="Email" autocomplete="username" [formControl]="form.controls.email">
+        </div>
+        <div class="form-group">
+          <input name="password" type="password" placeholder="Password" autocomplete="new-password"
+                 [formControl]="form.controls.password">
+        </div>
+        <div class="form-group">
+          <input name="confirmpassword" type="password" placeholder="Confirm Password" autocomplete="new-password" [formControl]="form.controls.confirmpassword">
+        </div>
+        <div class="padding-button">
+          <button type="reset" class="btn btn-primary mt-4">Reset</button>
+          <button type="submit" class="btn btn-primary mt-4">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <div *ngIf="errorValidation">
+    {{ errorValidationMessage }}
+  </div>

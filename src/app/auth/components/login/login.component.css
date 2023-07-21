@@ -1,0 +1,32 @@
+.card1
+{
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input
+{
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   padding-bottom: 5px;
+}
+
+.padding-button 
+{
+    padding: 10px;
+}
+
+.center-design
+{
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+h1
+{
+    text-align: center;
+}
+
+.left
+{
+    width: 15%;
+    border-right: 1px solid #222222;
+    background-color: lightgray;
+}
+
+.right
+{
+    width: 10%;
+    background-color: lightgray;
+    color: white;
+    border-left: 1px solid #222222;
+    text-align: center;
+}
+
+.middle
+{
+    width: 75%;
+    background-color: white;
+}
+
+img
+{
+    width: 50px;
+}
+
+div
+{
+    height: 900px;
+}
