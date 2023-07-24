@@ -28,4 +28,8 @@ export class PostService {
   getPostsByUserId(id: string) {
     return this.http.get<any>(`http://localhost:8800/api/posts/timeline/all/${id}`)
   }
+
+  getAllPosts() {
+    return this.http.get<any>(`http://localhost:8800/api/all`)
+  }
 }

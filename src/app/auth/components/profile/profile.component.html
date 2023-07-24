@@ -1,22 +1,23 @@
 
-<div>
+<div class="text-center">
   <h2>Create post</h2>
   <form #createFormInput="ngForm" (ngSubmit)="createPost(createFormInput.value.description)">
 
-      <textarea class="textarea" #textareaInput="ngModel" ngModel required maxlength="350"
-        name="description" id="description" cols="30" rows="10" placeholder="Description">
+      <textarea class="textarea" #textareaInput="ngModel" ngModel required maxlength="100"
+        name="description" id="description" cols="70" rows="3" placeholder="Enter description...">
       </textarea>
-
-    <button class="btn-success" color="primary">
+      <br>
+    <button class="btn-success button-design" color="primary">
       Save Post
-    </button>s
+    </button>
   </form>
 </div>
-
-<div *ngFor="let post of posts">
-  <div>id: {{ post._id }}</div>
-  <div>desc: {{ post.desc }}</div>
+<br>
+<div *ngFor="let post of posts" class="container text-center">
+  <div>Date Posted: {{ post.createdAt }}</div>
+  <div>{{ post.desc }}</div>
+  <br>
   <div>
-    <button (click)="deletePost(post._id)">Delete</button>
+    <button class="button-design" (click)="deletePost(post._id)">Delete</button>
   </div>
 </div>

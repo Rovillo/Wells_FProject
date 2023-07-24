@@ -1,0 +1,14 @@
+.button-design
+{
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.container
+{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: lightgreen;
+    font-weight: bold;
+    color: black;
+}

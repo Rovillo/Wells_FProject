@@ -7,6 +7,8 @@ import { RegisterComponent } from './components/register/register.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ProfileComponent } from './components/profile/profile.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 
@@ -15,13 +17,17 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    TimelineComponent
+    TimelineComponent,
+    ContactComponent,
+    AboutUsComponent
   ],
   exports: [
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    TimelineComponent
+    TimelineComponent,
+    ContactComponent,
+    AboutUsComponent,
   ],
   imports: [
     RouterModule.forChild(routes),
