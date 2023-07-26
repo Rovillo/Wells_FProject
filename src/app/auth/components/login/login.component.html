@@ -1,9 +1,8 @@
-
-  <div class="card1 container">
-   
     <!-- <form name="inform" method="post" (ngSubmit)="submit()"></form>-->
-    <div class="center-design">
+    <main>
+    <div class="container"><div class="center-design">
       <h1>Login</h1>
+      <hr>
       <form (ngSubmit)="submit()">
         <div class="form-group">
           <input name="email" type="text" placeholder="Email" [formControl]="form.controls.email">
@@ -17,11 +16,14 @@
           <button type="submit" class="btn btn-primary mt-4">Submit</button>
         </div>
       </form>
+      <div>
+        <p>Don't have an account? <a routerLink="/register">Click Here</a></p>
+      </div>
     </div>
-
   </div>
+
   <div *ngIf="errorValidation">
     {{ errorValidationMessage }}
   </div>
 
-
+</main>

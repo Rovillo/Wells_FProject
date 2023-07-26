@@ -1,8 +1,9 @@
-
+<main>
 <div class="container card1 text-center">
     <!-- <form name="inform" method="post" (ngSubmit)="submit()"></form>-->
     <div class="text-center">
       <h1>Sign Up</h1>
+      <hr>
       <form (ngSubmit)="submit()">
         <div class="form-group">
           <input name="first" type="text" placeholder="User Name" autocomplete="username" [formControl]="form.controls.username">
@@ -27,6 +28,9 @@
           <button type="reset" class="btn btn-primary mt-4">Reset</button>
           <button type="submit" class="btn btn-primary mt-4">Submit</button>
         </div>
+        <div>
+          <p>Have an account? <a routerLink="/login">Click Here</a></p>
+        </div>
       </form>
     </div>
 
@@ -34,3 +38,4 @@
   <div *ngIf="errorValidation">
     {{ errorValidationMessage }}
   </div>
+</main>

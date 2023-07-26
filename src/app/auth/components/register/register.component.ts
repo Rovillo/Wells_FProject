@@ -32,7 +32,6 @@ export class RegisterComponent implements  OnInit{
   }
 
   submit() {
-    console.log('test');
     console.log(this.form.value);
     const formValue = this.form.value;
     const registerModel: RegisterModel = {

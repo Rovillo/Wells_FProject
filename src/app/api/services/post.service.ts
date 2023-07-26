@@ -11,10 +11,7 @@ import {LoginAnswerModel} from "../../core/models/login-answer.model";
 @Injectable({ providedIn: "root"})
 export class PostService {
   constructor(private http: HttpClient) { }
-  getAllPosts() {
-    return this.http.get<any>(`http://localhost:8800/api/posts/all`)
-  }
-
+  
   create(data: any): Observable<any> {
     // now returns an Observable of Config
     return this.http.post<any>('http://localhost:8800/api/posts', data);
@@ -29,7 +26,11 @@ export class PostService {
   }
 
   getPostsByUserId(id: string) {
-    return this.http.get<any>(`http://localhost:8800/api/posts/timeline/all/${id}`)
+    return this.http.get<any>(`http://localhost:8800/api/posts/${id}`)
+  }
+
+  getAllPosts() {
+    return this.http.get<any>(`http://localhost:8800/api/posts/all`)
   }
 
   

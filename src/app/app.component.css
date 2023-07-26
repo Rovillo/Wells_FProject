@@ -41,3 +41,9 @@ footer{
 {
   color: white;
 }
+
+ .nav-item:hover
+{
+  background: white;
+  color: #222222;
+}

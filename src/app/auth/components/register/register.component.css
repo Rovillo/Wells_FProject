@@ -12,6 +12,8 @@
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #222222;
+    width: 300px;
+    height: 500px;
 }
 
 
@@ -27,3 +29,24 @@ input
 {
     padding: 10px;
 }
+
+p
+{
+    color: black;
+}
+
+h1 
+{
+    color: black;
+}
+
+hr 
+{
+    color: black;
+}
+
+button 
+{
+    margin: 5px;
+}
+

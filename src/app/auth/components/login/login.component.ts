@@ -48,7 +48,6 @@ export class LoginComponent implements  OnInit{
           this.errorValidation = true;
         }
       }, (err) => {
-        console.log('error')
         console.log(err);
         this.toastr.error(err.error.error);
         this.errorValidation = true;

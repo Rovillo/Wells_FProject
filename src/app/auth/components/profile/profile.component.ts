@@ -36,7 +36,7 @@ export class ProfileComponent implements OnInit {
   }
 
   
-  createPost(description: string | ArrayBufferView | ArrayBuffer) {
+  createPost(description: string) {
       const userId = localStorage.getItem('user_id');
       if (userId) {
         console.log(description);
@@ -44,13 +44,11 @@ export class ProfileComponent implements OnInit {
           userId: userId,
           desc: description
         }
-
+        debugger;
         this.postsService.create(data).subscribe((value) => {
-          debugger;
           console.log(value);
           this.updatePosts();
-        }, (err) => {
-          debugger;
+        }, (err) => {          
           console.log(err);
         })
       }

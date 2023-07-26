@@ -10,7 +10,6 @@ import {ToastrService} from "ngx-toastr";
 })
 export class TimelineComponent implements OnInit {
   posts: [] =[];
-  userId : string;
   constructor(
     private toats: ToastrService,
     private router: Router,
@@ -19,10 +18,6 @@ export class TimelineComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.userId = localStorage.getItem('user_id');
-    if (!this.userId) {
-      this.router.navigateByUrl('/auth/login')
-    }
     this.loadPost();
   }
 
@@ -33,12 +28,4 @@ export class TimelineComponent implements OnInit {
     });
   }
 
-  private updatePosts() {
-    const userId = localStorage.getItem('user_id');
-     if (userId) {
-       this.postsService.getPostsByUserId(userId).subscribe((value) => {
-         this.posts = value;
-       })
-     }
-    }
   }

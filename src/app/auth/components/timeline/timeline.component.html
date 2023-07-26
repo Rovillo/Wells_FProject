@@ -3,7 +3,7 @@
       <h1 class="text-center">Everyone's Posts:</h1>
       <ul>
         <li *ngFor="let pos of posts" class="container">
-          <h1>{{ pos.userId }} </h1>
+          <h1>Posted by: {{ pos.username }} </h1>
           <hr>
           <p>{{ pos.desc }}</p>
           <p> Date Posted: {{ pos.createdAt }}</p>
