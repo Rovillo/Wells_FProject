@@ -31,9 +31,9 @@ div
     display: block;
     border: 1px solid black;
     padding: 5px;
-    background-color: lightgreen;
+    background-color: #222222;
     font-weight: bold;
-    color: black;
+    color: whitesmoke;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -43,4 +43,12 @@ div
 p
 {
     text-align: center;
+}
+h1
+{
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    color: black;
 }

@@ -34,6 +34,8 @@ export class ProfileComponent implements OnInit {
       this.toats.error(err.error);
     })
   }
+
+  
   createPost(description: string | ArrayBufferView | ArrayBuffer) {
       const userId = localStorage.getItem('user_id');
       if (userId) {
@@ -53,13 +55,6 @@ export class ProfileComponent implements OnInit {
         })
       }
   }
-
-  loadPost() {
-    this.postsService.getAllPosts().subscribe((value) => {
-      this.posts = value;
-    }
-  );}
-
   private updatePosts() {
     const userId = localStorage.getItem('user_id');
      if (userId) {

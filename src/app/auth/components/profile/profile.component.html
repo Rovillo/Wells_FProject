@@ -14,8 +14,10 @@
 </div>
 <br>
 <div *ngFor="let post of posts" class="container text-center">
-  <div>Date Posted: {{ post.createdAt }}</div>
+  <div><h1>{{ post.userId }}</h1></div>
+  <hr>
   <div>{{ post.desc }}</div>
+  <div>Date Posted: {{ post.createdAt }}</div>
   <br>
   <div>
     <button class="button-design" (click)="deletePost(post._id)">Delete</button>

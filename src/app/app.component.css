@@ -12,7 +12,7 @@ h3{
 }
 .color-green
 {
-  background-color: lightgreen;
+  background-color: #222222;
   color: white;
 }
 
@@ -35,4 +35,9 @@ footer{
   min-height: 92vh;
   display: flex;
   flex-direction: column;
+}
+
+*
+{
+  color: white;
 }
